@@ -61,6 +61,10 @@ public class MainActivity extends BaseActivity {
             startService(serviceIntent);
         }
 
+
+        EditText dob = findViewById(R.id.dob);
+        dob.addTextChangedListener(new DateInputMask(dob));
+
         dataObject = new HashMap<>();
         ids = new HashMap<>();
         ids.put(R.id.fname, "fname");
