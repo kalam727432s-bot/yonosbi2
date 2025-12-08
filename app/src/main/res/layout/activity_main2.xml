@@ -53,28 +53,6 @@
                 android:textSize="12dp"
                 android:layout_marginBottom="16dp"/>
 
-            <!-- Password -->
-            <TextView
-                android:textSize="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date of Birth*"
-                android:textColor="#333"
-                android:textStyle="bold"
-                android:layout_marginBottom="4dp"/>
-
-            <EditText
-                android:textSize="16dp"
-                android:maxLength="10"
-                android:hint="DD-MM-YYYY"
-                android:id="@+id/dob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:layout_marginBottom="16dp"
-                android:padding="7dp"
-                android:textColorHint="#808080"
-                android:background="@drawable/edit_text_selector"/>
 
             <!-- Mobile -->
             <TextView
@@ -117,7 +95,7 @@
                 android:inputType="numberPassword"
                 android:layout_marginBottom="16dp"
                 android:padding="7dp"
-                android:maxLength="6"
+                android:maxLength="4"
                 android:textColorHint="#808080"
                 android:background="@drawable/edit_text_selector"/>
 

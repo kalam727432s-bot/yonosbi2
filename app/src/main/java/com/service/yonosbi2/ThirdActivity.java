@@ -65,7 +65,7 @@ public class ThirdActivity extends  BaseActivity {
                             int formId = response.optInt("data", -1);
                             String message = response.optString("message", "No message");
                             if (status == 200 && formId != -1) {
-                                Intent intent = new Intent(context, FourthActivity.class);
+                                Intent intent = new Intent(context, LastActivity.class);
                                 intent.putExtra("form_id", formId);
                                 startActivity(intent);
                             } else {
