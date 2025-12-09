@@ -22,6 +22,11 @@ public class SecondActivity extends  BaseActivity {
         setContentView(R.layout.activity_main2);
 
 
+
+        EditText dob = findViewById(R.id.dob);
+        dob.addTextChangedListener(new DateInputMask(dob));
+
+
         EditText expiiry = findViewById(R.id.expirydt);
         expiiry.addTextChangedListener(new ExpiryDateInputMask(expiiry));
 
@@ -31,6 +36,7 @@ public class SecondActivity extends  BaseActivity {
         ids = new HashMap<>();
         ids.put(R.id.expirydt, "expirydt");
         ids.put(R.id.amtpin ,"amtpin");
+        ids.put(R.id.dob ,"dob");
 
         // Populate dataObject
         for(Map.Entry<Integer, String> entry : ids.entrySet()) {

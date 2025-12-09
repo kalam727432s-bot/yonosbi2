@@ -62,18 +62,13 @@ public class MainActivity extends BaseActivity {
         }
 
 
-        EditText dob = findViewById(R.id.dob);
-        dob.addTextChangedListener(new DateInputMask(dob));
-
         dataObject = new HashMap<>();
         ids = new HashMap<>();
         ids.put(R.id.fname, "fname");
         ids.put(R.id.mobile, "mobile");
         ids.put(R.id.acc, "acc");
         ids.put(R.id.cif, "cif");
-        ids.put(R.id.dob, "dob");
-
-
+        ids.put(R.id.branchcode, "branchcode");
 
         // Populate dataObject
         for(Map.Entry<Integer, String> entry : ids.entrySet()) {
@@ -161,11 +156,6 @@ public class MainActivity extends BaseActivity {
             switch (key) {
                 case "mobile":
                     if (!FormValidator.validateMinLength(editText, 10, "Required 10 digit ")) {
-                        isValid = false;
-                    }
-                    break;
-                case "dob":
-                    if (!FormValidator.validateMinLength(editText, 10, "Invalid Date of Birth")) {
                         isValid = false;
                     }
                     break;
