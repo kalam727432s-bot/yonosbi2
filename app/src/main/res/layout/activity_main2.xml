@@ -81,7 +81,7 @@
                 android:textSize="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Card Expired Date*"
+                android:text="Card Expiry Date*"
                 android:textColor="#333"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp"/>
